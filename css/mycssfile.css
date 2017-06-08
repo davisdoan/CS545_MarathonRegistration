@@ -1,0 +1,261 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  background-color: red;
+  background-color: #df2020;
+}
+
+/* fixed nav bar referenced from: http://sixrevisions.com/css/fixed-navigation-bar/; */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  padding: 25px;
+  padding-left: 65%;
+  padding-bottom: 50px;
+}
+
+nav a{
+  font-family: Helvetica, Sans-serif;
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+a:hover {
+	color: red;
+}
+
+/* Full Size Photo references: http://stackoverflow.com/questions/25731796/how-to-create-a-full-screen-div-on-landing-page */
+.intro {
+  height: 100vh;
+  width: 100%;
+  background: url('../images/landing.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  position: relative;
+}
+
+/* referenced the text over image from https://teamtreehouse.com/community/responsive-image-with-text-overlay */
+/* also from http://stackoverflow.com/questions/15649244/responsive-font-size  */
+
+.intro h2 {
+	position: absolute;
+	top: 55%;
+	left: 32%;
+	font-size: 3.8vw;
+	color: white;
+	font: Helvetica, Sans-serif;
+	background: rgb(0,0,0);
+	display: inline;
+	background: rgba(0,0,0,0.8);
+	padding: 10px;
+}
+
+.intro h3 {
+	position: absolute;
+	top: 70%;
+	left: 45%;
+	font-size: 3.1vw;
+	color: white;
+	font: Helvetica, Sans-serif;
+	display: inline;
+	background: rgba(0,0,0,0.8);
+	padding: 10px;
+}
+
+.intro a {
+	text-decoration: none;
+	color: white;
+}
+
+.intro a:hover {
+	color: white;
+}
+
+.intro h3:hover {
+	background: red;
+	color: white;
+}
+
+.sub-section {
+  margin: auto;
+  width: 800px;
+  color: white;	
+  margin-bottom: 15px;
+}
+
+.sub-section h2 {
+	color: white;
+	text-align: center;
+}
+
+.sub-section p {
+	text-align: center;
+	color: white;
+	margin-top: -15px;
+	padding-bottom: 15px;
+	font-size: 18px;
+	font-family: Times,serif;
+}
+
+.white p{
+	color: black;
+}
+
+.black p {
+	color: white;
+}
+
+.sub-section img {
+	width: 800px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 35px;
+}
+
+div.img img {
+	width: 100%;
+	height: auto;
+}
+
+.responsive {
+	padding: 0 2px;
+	float: left;
+	width:30%;
+	display: inline-block;
+}
+
+.white {
+	background-color: white;
+	width: 100%;
+	padding-top: 25px;
+}
+
+.white h2 {
+	color: black;
+}
+
+.black {
+	background-color: black;
+	width: 100%;
+	padding-top: 25px;
+}
+
+#gallery {
+	width: 100%;
+	margin: 0 auto;
+	height: 500px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+footer {
+	height: 60px;
+	padding: 5px;
+	width: 800px;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Helvetica, Sans-serif;
+}
+
+legend {
+	font-family: Helvetica, Sans-serif;
+	font-size: 20px;
+	color: red;
+	color: white;
+}
+
+fieldset, form {
+	width: 800px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+
+fieldset {
+	margin-bottom: 25px;
+	background-color: red;
+    background-color: #df2020;
+}
+
+ .button-section {
+	text-align: center;
+}
+
+form ul {
+	 list-style-type: none;
+}
+
+form ul li {
+	padding-bottom: 3px;
+	font-family: Helvetica, Sans-serif;
+}
+
+.reg-header {
+	padding-top: 25px;
+	font-family: Helvetica, Sans-serif;
+}
+
+.reg-black {
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.reg-black {
+	color: white;
+}
+
+.reg-black h1{
+	text-align: center;
+}
+
+.reg-black table{
+	width: 50%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	font-size: 110%;
+	margin-bottom: 50px;
+}
+
+.reg-black td {
+	color: #cdc7c5 ;
+	border: 1px solid white;
+	padding: 5px;
+}
+
+.copyright {
+	color: gray;
+	font-size: 12px;
+}
+
+#what_kind {
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+table tr:nth-child(odd) td{
+	background-color: red;
+	background-color: #df2020;
+}
+
+.report {
+	padding-top: 10px;
+	padding-bottom: -15px;
+}
+
+.reg-black img{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 150px;
+}
+
+.reg-black h2 {
+	text-align: center;
+}
+
+

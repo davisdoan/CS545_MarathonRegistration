@@ -1,0 +1,74 @@
+	$params[] = trim(str_replace($bad_chars, "", $_POST['fname']));
+	$params[] = trim(str_replace($bad_chars, "", $_POST['mname']));
+	$params[] = trim(str_replace($bad_chars, "", $_POST['lname']));
+
+	$params[] = trim(str_replace($bad_chars, "", $_POST['m']));   3
+	$params[] = trim(str_replace($bad_chars, "", $_POST['d']));   4
+	$params[] = trim(str_replace($bad_chars, "", $_POST['y']));   5
+
+	$params[] = trim(str_replace($bad_chars, "", $_POST['address']));  6
+	$params[] = trim(str_replace($bad_chars, "", $_POST['address2']));	7
+	$params[] = trim(str_replace($bad_chars, "", $_POST['city']));       8
+	$params[] = trim(str_replace($bad_chars, "", $_POST['states']));    9
+	$params[] = trim(str_replace($bad_chars, "", $_POST['zipcode']));   10
+
+	$params[] = trim(str_replace($bad_chars, "", $_POST['phonestart'])); 11
+	$params[] = trim(str_replace($bad_chars, "", $_POST['phonemid']));	 12	 	
+	$params[] = trim(str_replace($bad_chars, "", $_POST['phoneend']));   13
+
+	$params[] = trim(str_replace($bad_chars, "", $_POST['email']));      14
+	$params[] = trim(str_replace($bad_chars, "", $_POST['gender']));     15
+	$params[] = trim(str_replace($bad_chars, "", $_POST['experience']));  16
+	$params[] = trim(str_replace($bad_chars, "", $_POST['category']));    17
+	$params[] = trim(str_replace($bad_chars, "", $_POST['medical']));    18
+
+echo "<td><img src='http://jadran.sdsu.edu/~jadrn012/proj3/im_g@t3s/$row[4]' width="125"></td>";
+
+$message = "validate_data is called";
+echo "<script type='text/javascript'>alert('$message');</script>";
+
+ echo "Success!</br >\n";
+        echo "The filename is: ".$fname."<br />";
+        echo "The type is: ".$_FILES['file']['type']."<br />";
+        echo "The size is: ".$_FILES['file']['size']."<br />";
+        echo "The tmp filename is: ".$_FILES['file']['tmp_name']."<br />";  
+        echo "The basename is: ".basename($fname)."<br />";  
+	<!--
+<h2>The catalog of uploaded images:</h2> 
+<?php
+    $d = dir($COMPUTER_DIR.'/');
+    while($fname = $d->read()) {
+        $data[$fname] = $fname;
+        }
+    foreach($data as $fname => $fvalue) {
+        if($fname == "." || $fname == "..") {
+            ;
+            }
+        else {
+            echo "<img src=\"$UPLOAD_DIR/$fname\""." width='200px' />\n";
+        }
+    }    
+
+    ?>
+
+ </body>
+</html>     
+-->     
+
+
+//
+$(".button-test").on('click', function(){
+		
+		if($('input[name="exp"]:checked').val()== "")return;
+		var exp = $('input[name="exp"]:checked').val();
+		
+		alert("test button worksdfsdf! the val selected is: " + exp);
+		var url ='php/my_php.php?exp='+ exp;
+		$.get(url, exp_handler);
+	});
+
+
+function exp_handler(response) {
+	alert(response);
+	$('#what_kind').text(response);
+}

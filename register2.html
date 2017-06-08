@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<title>SDSU 2016 Marathon</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/mycssfile.css">
+		<script src"/jquery/jquery.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="javascript/my.js" ></script>
+		
+	</head>
+
+	<body>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="register.html">Register</a>
+	</nav>
+
+	<section class="sub-section black reg-black" >
+		<h2 class="reg-header">First Step in the Race!</h2>
+
+		<!-- skeleton for the form referenced from view-source:http://jadran.sdsu.edu/~jadrn000/forms/form3.html -->
+		<fieldset>
+		<legend>Registration for the SDSU Marathon</legend>
+		<form name="runner_info" class="runner" method="post" action="php/process_request.php" enctype="multipart/form-data">
+		<ul>
+			<li>
+				<label for="fname"  title="Enter in letters only">First Name</label>
+				<input type="text" name="fname" id="fname2222" maxlength="32"  placeholder="Marshall" >
+				<label for="mname">Middle Name</label> 	
+				<input type="text" name="mname" maxlength="32" title="Enter in letters only">
+				<label for="lname">Last Name</label> 
+				<input type="text" name="lname" id="lname" maxlength="32" title="Enter in letters only" placeholder="Faulk" >
+			</li>
+
+			<li> 
+				<label for="d">Date of Birth</label> 
+				<input type="text" name="m" id="m" placeholder="MM" size="2" >
+				<input type="text" name="d" id="d" placeholder="DD" size="2" >
+				<input type="text" name="y" id="y" placeholder="YYYY" size="4"  >   
+			</li>
+
+			<li>
+				<label for="address">Address</label>
+				<input type="text" name="address" id="address">
+
+				<input type="text" name="address2"  placeholder="Apt/Condo Number">  
+			</li>
+			<li>
+				<label for="city">City</label>
+				<input type="text" name="city" id="city"  title="Enter in letters only ex: San Diego"  >
+
+				<label for="state">State</label>
+				<select name="state" id="states">
+					<option value="Alabama">Alabama</option>
+					<option value="Alaska">Alaska</option>
+					<option value="Arizona">Arizona</option>
+					<option value="Arkansas">Arkansas</option>
+					<option value="California">California</option>
+					<option value="Colorado">Colorado</option>
+					<option value="Connecticut">Connecticut</option>
+					<option value="Delaware">Delaware</option>
+					<option value="District Of Columbia">District Of Columbia</option>
+					<option value="Florida">Florida</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Hawaii">Hawaii</option>
+					<option value="Idaho">Idaho</option>
+					<option value="Illinois">Illinois</option>
+					<option value="Indiana">Indiana</option>
+					<option value="Iowa">Iowa</option>
+					<option value="Kansas">Kansas</option>
+					<option value="Kentucky">Kentucky</option>
+					<option value="Louisiana">Louisiana</option>
+					<option value="Maine">Maine</option>
+					<option value="Maryland">Maryland</option>
+					<option value="Massachusetts">Massachusetts</option>
+					<option value="Michigan">Michigan</option>
+					<option value="Minnesota">Minnesota</option>
+					<option value="Mississippi">Mississippi</option>
+					<option value="Missouri">Missouri</option>
+					<option value="Montana">Montana</option>
+					<option value="Nebraska">Nebraska</option>
+					<option value="Nevada">Nevada</option>
+					<option value="New Hampshire">New Hampshire</option>
+					<option value="New Jersey">New Jersey</option>
+					<option value="New Mexico">New Mexico</option>
+					<option value="New York">New York</option>
+					<option value="North Carolina">North Carolina</option>
+					<option value="North Dakota">North Dakota</option>
+					<option value="Ohio">Ohio</option>
+					<option value="Oklahoma">Oklahoma</option>
+					<option value="Oregon">Oregon</option>
+					<option value="Pennsylvania">Pennsylvania</option>
+					<option value="hode Island">Rhode Island</option>
+					<option value="South Carolina">South Carolina</option>
+					<option value="South Dakota">South Dakota</option>
+					<option value="Tennessee">Tennessee</option>
+					<option value="Texas">Texas</option>
+					<option value="Utah">Utah</option>
+					<option value="Vermont">Vermont</option>
+					<option value="Virginia">Virginia</option>
+					<option value="Washington">Washington</option>
+					<option value="West Virginia">West Virginia</option>
+					<option value="Wisconsin">Wisconsin</option>
+					<option value="Wyoming">Wyoming</option>
+				</select>
+			
+			<!-- pattern for zip code from http://html5pattern.com/Postal_Codes -->
+			<label for="zipcode">Zipcode</label>
+			<input type="text" name="zipcode" title="Enter in Numbers Only ex: 92129" placeholder="55555" > <br>
+			</li>
+
+			<li>
+				<label for="phone">Phone Number</label>
+				(<input type="text" id="phone" name="phonestart" size="3" minlength="3" maxlength="3"  placeholder="XXX" title="Enter in area code ex: 619">)
+				<input type="text" name="phonemid" size="3" minlength="3" maxlength="3"  placeholder="XXX" title="Enter in the first 3 digits ex: 524">
+				<input type="text" name="phoneend" size="4" minlength="4" maxlength="4" placeholder="XXXX" title="Enter in the last 4 digits ex: 1480">
+			</li>
+
+			<li>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="name@email.com" >
+			</li>
+
+			<li>
+				<label for="gender">Gender</label>
+				<input type="radio" id="gender" value="male" name="gender" > Male   
+				<input type="radio" value="female" name="gender"> Female
+			</li>
+			
+			<li>
+				<label for="experience">Experience Level</label>
+				<input type="radio" id="experience" value="novice" name="exp" > Novice 
+				<input type="radio" value="experienced" name="exp"> Experienced 
+				<input type="radio" value="expert" name="exp"> Expert
+			</li>
+
+			<li>
+				<label for="category">Category</label>
+				<input type="radio" id="category" value="teen" name="category" > Teen
+				<input type="radio" name="category" value="adult"> Adult
+				<input type="radio" name="category" value="senior"> Senior
+			</li>
+			
+			<li>
+				<label for="medical">Medical Conditions</label>
+			</li>
+
+			<li>
+				<textarea name="medical" id="medical" rows="5" cols="45" maxlength="200" placeholder="List Medical Conditions Here..."></textarea>
+			</li>
+			<li>
+				<label>Photo Name</label>
+				<input type="text" name="photoname" placeholder="Name Your Photo">
+			</li>
+			<li>
+				<label>Photo File:</label>
+				<input type="file" name="file" />
+			</li>
+		</ul>
+
+		<div class="button-section">
+			<input type="reset" value="Clear Data" class="button-clear" />
+			<input type="submit" value="Submit" class="button-submit" />
+			<h3 id="what_kind">&nbsp;</h3>
+		</div>
+		
+		</form>
+		</fieldset>
+	</section>
+
+	<footer>
+		<p>5500 Campanile Drive San Diego, CA 92182 </p>
+		<p class="copyright">Copyright 2016</p>
+	</footer>
+
+	</body>
+</html>
